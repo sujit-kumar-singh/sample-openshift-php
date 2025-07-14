@@ -21,7 +21,7 @@ session_start();
         $date_of_birth = $_POST['date_of_birth'];
         
         if(isset($firstname)) {
-                $query = 'INSERT INTO `employees`.`employee` (`firstname`, `title`, `designation`, `year_of_joining`, `date_of_birth`) VALUES("'.$firstname.'", "'.$title.'", "'.$designation.'", "'.$year_of_joining.'", "'.$date_of_birth.'");';
+                $query = 'INSERT INTO `employees`.`employees` (`firstname`, `title`, `designation`, `year_of_joining`, `date_of_birth`) VALUES("'.$firstname.'", "'.$title.'", "'.$designation.'", "'.$year_of_joining.'", "'.$date_of_birth.'");';
                 
                 if ($conn->query($query) === TRUE) {
                         echo "User created successfully";
