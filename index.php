@@ -30,7 +30,7 @@ session_start();
                 }
         }
 
-        $query = 'SELECT * FROM employee';
+        $query = 'SELECT * FROM employees';
         $result = $conn->query($query);
 
         if($result) {
